@@ -24,7 +24,7 @@ const galleryContainer = document.getElementById('gallery-container');
 
 images.forEach(src => {
   const col = document.createElement('div');
-  col.className = 'col-6 col-md-3 col-sm-6';
+  col.className = 'col-6 col-md-3';
 
   const card = document.createElement('div');
   card.className = 'card';
