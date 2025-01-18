@@ -24,7 +24,7 @@ const galleryContainer = document.getElementById('gallery-container');
 
 images.forEach(src => {
   const col = document.createElement('div');
-  col.className = 'col-6 col-md-3';
+  col.className = 'col-6 col-md-3 col-sm-6';
 
   const card = document.createElement('div');
   card.className = 'card';
@@ -33,7 +33,7 @@ images.forEach(src => {
   img.src = src;
   img.className = 'card-img-top';
   img.alt = 'Deskripsi Foto';
-  
+
   card.appendChild(img);
   col.appendChild(card);
   galleryContainer.prepend(col);
