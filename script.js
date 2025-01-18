@@ -33,8 +33,7 @@ images.forEach(src => {
   img.src = src;
   img.className = 'card-img-top';
   img.alt = 'Deskripsi Foto';
-  img.loading = "lazy";
-
+  
   card.appendChild(img);
   col.appendChild(card);
   galleryContainer.prepend(col);
