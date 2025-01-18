@@ -180,6 +180,16 @@ body {
   font-weight: 700;
 }
 
+.contact-section a {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+  color: #cf5b83;
+}
+
 /* kontak section end */
 
 
