@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sessionStorage.setItem("page_refreshed", "true");
     setTimeout(() => {
       window.location.reload();
-    }, 3000);
+    }, 1000);
   }
 });
 
