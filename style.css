@@ -136,7 +136,6 @@ body {
 /* gallery */
 .navbar-gallery {
   background-color: #cf5b83;
-  transition: all ease-in-out 0.3s;
 }
 
 .navbar-gallery a {
@@ -160,6 +159,10 @@ body {
   width: 100%;
   height: auto;
 }
+
+.card {
+  border-radius: 30px;
+}
 /* kontak section */
 #hubungi {
   padding-top: 100px;
@@ -178,6 +181,7 @@ body {
 }
 
 /* kontak section end */
+
 
 /* responsif */
 @media (max-width: 576px) {
@@ -226,6 +230,10 @@ body {
 
   .card-layanan p {
     font-size: 14px;
+  }
+
+  .card-layanan {
+    margin-bottom: 10px;
   }
 
   .gallery button {

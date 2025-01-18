@@ -8,34 +8,39 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// gallery
-document.addEventListener("DOMContentLoaded", function () {
-  // Daftar gambar yang akan dimasukkan ke dalam gallery
-  const imageUrls = [
-    "https://i.pinimg.com/474x/cb/50/11/cb5011f3d0c1ee269feaefd7ce86ae41.jpg",
-    "https://i.pinimg.com/736x/92/c5/a7/92c5a73d2c483df6d5c0075e46e85acc.jpg",
-    "https://i.pinimg.com/474x/09/d7/7f/09d77fde44c32bc9bc753c31ae83d328.jpg",
-    "https://i.pinimg.com/474x/74/ad/1e/74ad1ee2c36086803be643570b0b7453.jpg",
-  ];
+// gallery image
+const images = [
+  "https://i.pinimg.com/474x/74/ad/1e/74ad1ee2c36086803be643570b0b7453.jpg",
+  "https://i.pinimg.com/474x/09/d7/7f/09d77fde44c32bc9bc753c31ae83d328.jpg",
+  "https://i.pinimg.com/736x/92/c5/a7/92c5a73d2c483df6d5c0075e46e85acc.jpg",
+  "https://i.pinimg.com/474x/cb/50/11/cb5011f3d0c1ee269feaefd7ce86ae41.jpg",
+];
 
-  // Mendapatkan elemen row untuk menambahkan gambar
-  const row = document.querySelector(".album .container .row");
+const galleryContainer = document.getElementById('gallery-container');
 
-  // Menambahkan gambar-gambar ke dalam row
-  imageUrls.forEach((url) => {
-    const col = document.createElement("div");
-    col.classList.add("col-6", "col-md-3");
+images.forEach(src => {
+  const col = document.createElement('div');
+  col.className = 'col-6 col-md-3';
 
-    const card = document.createElement("div");
-    card.classList.add("card", 'border-0');
+  const card = document.createElement('div');
+  card.className = 'card';
 
-    const img = document.createElement("img");
-    img.src = url;
-    img.classList.add("card-img-top");
-    img.alt = "Thumbnail";
+  const img = document.createElement('img');
+  img.src = src;
+  img.className = 'card-img-top';
+  img.alt = 'Deskripsi Foto';
 
-    card.appendChild(img);
-    col.appendChild(card);
-    row.appendChild(col);
-  });
+  card.appendChild(img);
+  col.appendChild(card);
+  galleryContainer.appendChild(col);
 });
+
+// refresh otomatis
+document.addEventListener("DOMContentLoaded", () => {
+  if (!sessionStorage.getItem("page_refreshed")) {
+    sessionStorage.setItem("page_refreshed", "true");
+
+    window.location.reload();
+  }
+});
+
