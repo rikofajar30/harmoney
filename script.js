@@ -36,7 +36,7 @@ images.forEach(src => {
 
   card.appendChild(img);
   col.appendChild(card);
-  galleryContainer.appendChild(col);
+  galleryContainer.prepend(col);
 });
 
 // refresh otomatis
