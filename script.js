@@ -68,6 +68,7 @@ items.forEach((item) => {
     video.style.aspectRatio = "9 / 16";
     video.controls = true;
     video.loop = true;
+    video.style.borderRadius = "30px";
     video.addEventListener('play', () => {
       const allVideos = document.querySelectorAll('video');
       allVideos.forEach((otherVideo) => {
