@@ -18,7 +18,6 @@ const items = [
     type: "image",
     src: "https://i.pinimg.com/474x/09/d7/7f/09d77fde44c32bc9bc753c31ae83d328.jpg",
   },
-  { type: "video", src: "assets/video harmoney/1.mp4" },
   {
     type: "image",
     src: "https://i.pinimg.com/736x/92/c5/a7/92c5a73d2c483df6d5c0075e46e85acc.jpg",
@@ -27,6 +26,7 @@ const items = [
     type: "image",
     src: "https://i.pinimg.com/474x/cb/50/11/cb5011f3d0c1ee269feaefd7ce86ae41.jpg",
   },
+  { type: "video", src: "assets/video harmoney/2.mp4" },
   {
     type: "image",
     src: "https://i.pinimg.com/736x/5a/00/f2/5a00f2b00b1a9d4ee516aa68d60a8b43.jpg",
@@ -43,7 +43,7 @@ const items = [
     type: "image",
     src: "https://i.pinimg.com/736x/64/89/5b/64895b3bd499f71c3da4944d807264ac.jpg",
   },
-  { type: "video", src: "assets/video harmoney/2.mp4" },
+  { type: "video", src: "assets/video harmoney/1.mp4" },
 ];
 
 const galleryContainer = document.getElementById("gallery-container");
