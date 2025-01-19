@@ -20,6 +20,7 @@ const images = [
   "https://i.pinimg.com/736x/64/89/5b/64895b3bd499f71c3da4944d807264ac.jpg"
 ];
 
+// Menampilkan foto di galeri
 const galleryContainer = document.getElementById('gallery-container');
 
 images.forEach(src => {
@@ -38,6 +39,7 @@ images.forEach(src => {
   col.appendChild(card);
   galleryContainer.prepend(col);
 });
+
 
 // refresh otomatis
 document.addEventListener("DOMContentLoaded", () => {
