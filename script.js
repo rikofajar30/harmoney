@@ -69,12 +69,24 @@ items.forEach((item) => {
     video.controls = true;
     video.autoplay = true;
     video.muted = true;
+    video.addEventListener('play', () => {
+      const allVideos = document.querySelectorAll('video');
+      allVideos.forEach((otherVideo) => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+          otherVideo.currentTime = 0;
+        }
+      });
+    });
     card.prepend(video);
   }
+  
 
   col.prepend(card);
   galleryContainer.prepend(col);
 });
+
+
 
 // refresh otomatis
 document.addEventListener("DOMContentLoaded", () => {
