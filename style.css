@@ -266,6 +266,7 @@ footer {
 
   .contact-section {
     padding: 20px;
+    padding-top: 800px;
   }
 
   .contact-card {
@@ -276,9 +277,7 @@ footer {
     font-size: 20px;
   }
 
-  #hubungi {
-    padding-top: 800px;
-  }
+ 
 
   
 }
