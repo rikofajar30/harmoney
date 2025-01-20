@@ -193,6 +193,12 @@ body {
 
 /* kontak section end */
 
+footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 /* responsif */
 @media (max-width: 576px) {
