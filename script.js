@@ -44,6 +44,7 @@ const items = [
     src: "https://i.pinimg.com/736x/64/89/5b/64895b3bd499f71c3da4944d807264ac.jpg",
   },
   { type: "video", src: "assets/video harmoney/1.mp4" },
+  { type: "video", src: "assets/video harmoney/3.mp4" },
 ];
 
 const galleryContainer = document.getElementById("gallery-container");
