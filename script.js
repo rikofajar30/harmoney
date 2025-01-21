@@ -96,6 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("page_refreshed", "true");
     setTimeout(() => {
       window.location.reload();
-    }, 1000);
+    }, 5000);
   }
 });
