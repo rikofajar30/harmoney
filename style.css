@@ -269,11 +269,21 @@ footer {
     margin-bottom: 10px;
   }
 
-  .gallery button {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
+  .btn-gallery {
+    border-color: white;
+    background-color: white;
+    color : #cf5b83;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 400;
   }
+  
+  .btn-gallery:hover {
+    border-color: white;
+    background-color: #cf5b83;
+    color : white;
+  }
+
 
   .album img {
     width: 100%;
