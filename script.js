@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!localStorage.getItem("gallery_refreshed")) {
     localStorage.setItem("gallery_refreshed", "true");
     setTimeout(() => {
-      galleryContainer.innerHTML = ""; 
       generateGallery(); 
     }, 3000); 
   } else {
