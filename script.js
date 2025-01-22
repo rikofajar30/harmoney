@@ -89,13 +89,17 @@ items.forEach((item) => {
 
 
 
-// refresh otomatis
+// refresh otomatis gallery
 document.addEventListener("DOMContentLoaded", () => {
-  if (!localStorage.getItem("page_refreshed")) {
-    console.log("Page will refresh once.");
-    localStorage.setItem("page_refreshed", "true");
+  if (!localStorage.getItem("gallery_refreshed")) {
+    console.log("Gallery container will refresh once.");
+    localStorage.setItem("gallery_refreshed", "true");
+
+    const galleryContainer = document.getElementById("gallery-container");
+    const originalContent = galleryContainer.innerHTML;
+
     setTimeout(() => {
-      window.location.reload();
-    }, 5000);
+      galleryContainer.innerHTML = originalContent; 
+    }, 3000);
   }
 });
