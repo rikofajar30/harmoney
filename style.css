@@ -147,6 +147,22 @@ body {
   font-size: 18px;
 }
 
+.btn-gallery {
+  border-color: white;
+  background-color: white;
+  color : #cf5b83;
+  border-radius: 5px;
+  padding: 8px 8px;
+  font-weight: 700;
+}
+
+.btn-gallery:hover {
+  border-color: white;
+  background-color: #cf5b83;
+  color : white;
+  border-radius: 5px;
+}
+
 .gallery h2 {
   padding-top: 100px;
   color: #cf5b83;
