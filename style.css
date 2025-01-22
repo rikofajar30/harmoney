@@ -148,18 +148,20 @@ body {
 }
 
 .btn-gallery {
-  border-color: white;
-  background-color: white;
-  color : #cf5b83;
-  border-radius: 15px;
-  padding: 8px 8px;
+  width: 200px;
+  color: #cf5b83;
+  padding: 10px;
+  font-size: 16px;
   font-weight: 700;
+  border-radius: 20px;
+  border: 2px solid #cf5b83;
+  transition: all 0.3s ease;
 }
 
 .btn-gallery:hover {
-  border-color: white;
+  font-weight: 900;
+  color: white;
   background-color: #cf5b83;
-  color : white;
 }
 
 .gallery h2 {
@@ -269,21 +271,10 @@ footer {
   }
 
   .btn-gallery {
-    border-color: white;
-    background-color: white;
-    color : #cf5b83;
-    border-radius: 15px;
-    font-weight: 700;
-    font-size: 400;
+    width: 160px;
+    font-size: 12px;
   }
   
-  .btn-gallery:hover {
-    border-color: white;
-    background-color: #cf5b83;
-    color : white;
-  }
-
-
   .album img {
     width: 100%;
     height: auto;
