@@ -85,5 +85,14 @@ items.forEach((item) => {
   galleryContainer.prepend(col);
 });
 
+const btnGallery = document.querySelector('.btn-gallery');
+if (btnGallery) {
+  btnGallery.addEventListener('click', function() {
+    this.style.display = 'none'; // Menyembunyikan tombol
+    window.location.reload(); // Menyegarkan halaman
+  });
+}
+
+
 
 
