@@ -85,18 +85,5 @@ items.forEach((item) => {
   galleryContainer.prepend(col);
 });
 
-// refresh otomatis gallery
-document.addEventListener("DOMContentLoaded", () => {
-  if (!localStorage.getItem("gallery_refreshed")) {
-    localStorage.setItem("gallery_refreshed", "true");
-    setTimeout(() => {
-      generateGallery(); 
-    }, 3000); 
-  } else {
-    generateGallery();
-  }
-});
-
-
 
 
