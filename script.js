@@ -81,25 +81,23 @@ items.forEach((item) => {
     });
     card.prepend(video);
   }
-  
-
   col.prepend(card);
   galleryContainer.prepend(col);
 });
 
-
-
 // refresh otomatis gallery
 document.addEventListener("DOMContentLoaded", () => {
   if (!localStorage.getItem("gallery_refreshed")) {
-    console.log("Gallery container will refresh once.");
     localStorage.setItem("gallery_refreshed", "true");
-
-    const galleryContainer = document.getElementById("gallery-container");
-    const originalContent = galleryContainer.innerHTML;
-
     setTimeout(() => {
-      galleryContainer.innerHTML = originalContent; 
-    }, 3000);
+      galleryContainer.innerHTML = ""; 
+      generateGallery(); 
+    }, 3000); 
+  } else {
+    generateGallery();
   }
 });
+
+
+
+
